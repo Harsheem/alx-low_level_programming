@@ -8,6 +8,7 @@ int main(void)
 {
 	char letter, e, q;
 	letter = 'a';
+
 	e = 'e';
 	q = 'q';
 
@@ -16,6 +17,7 @@ int main(void)
 		if (letter != e && letter != q)
 		{
 			putchar(letter);
+			letter++;
 		}
 	}
 	putchar('\n');
