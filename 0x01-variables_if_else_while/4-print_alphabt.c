@@ -2,24 +2,21 @@
 
 /**
  * main - Entry Point
- * Return: Always 0 (sucess)
+ * Return: Always 0 (success)
  */
-int main(void)
+int main (void)
 {
-	char letter, e, q;
-	letter = 'a';
+	char low, e, q;
 
 	e = 'e';
 	q = 'q';
 
-	while (letter <= 'z')
+	for (low = 'a'; low <= 'z'; low++)
 	{
-		if (letter != e && letter != q)
-		{
-			putchar(letter);
-			letter++;
-		}
+		if (low != e && low != q)
+			putchar(low);
 	}
 	putchar('\n');
+
 	return (0);
 }
