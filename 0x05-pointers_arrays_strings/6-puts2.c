@@ -1,53 +1,19 @@
 #include "main.h"
 /**
- * puts2 - prints every other character from a string
+ * puts2 - prints the characters of a string
  *
- * @str: string to be passed to the puts2 function
- * Return: characters of a string
+ * @str: character to be printed
  */
 void puts2(char *str)
 {
-	int index;
+	int x;
 
-	int length;
-
-	char stri;
-
-	index = 0;
-
-	length = _strlen(str);
-
-	while (*str != '\0')
+	for (x = 0; str[x] != '\0'; x++)
 	{
-		stri = str[index];
-		_putchar(stri);
-		if (index != length)
+		if (x % 2 == 0)
 		{
-			index = index + 2;
+			_putchar(str[x]);
 		}
-		else if (index == length)
-		{
-			break;
-		}
-
 	}
 	_putchar('\n');
-}
-/**
- * _strlen - prints length of the string
- * @s: string to be examined
- * Return: length of the string
- */
-int _strlen(char *s)
-{
-	int count;
-
-	count = 0;
-
-	while (*s != '\0')
-	{
-		count++;
-		s++;
-	}
-	return (count);
 }
