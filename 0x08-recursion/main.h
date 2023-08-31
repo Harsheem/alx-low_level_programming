@@ -10,3 +10,4 @@ int checker(int n, int base);
 int is_palindrome(char *s);
 int getter(char *str, int len, int count);
 int _strlen_recursion(char *s);
+int wildcmp(char *s1, char *s2);
