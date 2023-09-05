@@ -24,6 +24,13 @@ char *create_array(unsigned int size, char c)
 		{
 			ptr[count] = c;
 		}
-		return (ptr);
+		if (ptr == NULL)
+		{
+			return (NULL);
+		}
+		else
+		{
+			return (ptr);
+		}
 	}
 }
