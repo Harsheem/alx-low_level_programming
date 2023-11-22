@@ -1,0 +1,602 @@
+!<arch>
+_abs.c/         0           0     0     644     411       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _abs - returns the absolute value of a number
+ *
+ * @n: number whose abs value is to be checked
+ *
+ * Return: abs value of parameter
+ */
+int _abs(int n)
+{
+	if (n >= 0)
+	{
+		return (n);
+	}
+	else
+	{
+		return (-n);
+	}
+}
+/**
+ * main - entry point
+ *
+ * Return: 0 on success
+ */
+int main(void)
+{
+	int x;
+	int y;
+
+	y = -2;
+
+	x = _abs(y);
+	printf("%d\n", x);
+	return (0);
+}
+
+_atoi.c/        0           0     0     644     283       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _atoi - returns an int value being represnted by a string
+ *
+ *@s: string of characters
+ *
+ * Return: integer value
+ */
+int _atoi(char *s)
+{
+	return (0);
+}
+/**
+ * main - entry point
+ *
+ * Return: 0 or 1
+ */
+int main(void)
+{
+	return (0);
+}
+
+_isalpha.c/     0           0     0     644     436       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _isalpha - checks for alphabetic characters
+ *
+ * @c: character to be checked
+ *
+ * Return: 1 if alpha char or 0
+ */
+int _isalpha(int c)
+{
+	if ((c >= 'A' && c <= 'Z') || (c <= 'a' && c >= 'z'))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
+/**
+ * main - entry point
+ *
+ * Return: 1 or 0;
+ */
+int main(void)
+{
+	int x;
+	char y;
+
+	y = 'B';
+	x = _isalpha(y);
+	printf("%d\n", x);
+	return (0);
+}
+_isdigit.c/     0           0     0     644     444       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _isdigit - checks for numbers
+ *
+ * @c: number to be checked
+ *
+ * Return: 1 if number or else 0
+ */
+int _isdigit(int c)
+{
+	if ((c >= '0' && c <= '9') || (c == '-' && c >= '0' && c <= '9'))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
+/**
+ * main - entry point
+ *
+ * Return: 1 on success or 0
+ */
+int main(void)
+{
+	int x;
+	char y;
+
+	y = '2';
+
+
+	x = _isdigit(y);
+	printf("%d\n", x);
+	return (0);
+}
+_islower.c/     0           0     0     644     465       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _islower - checkes whether character is of lower case
+ *
+ * @c: character to be checked
+ *
+ * Return: true or false
+ */
+int _islower(int c)
+{
+
+	if (c >= 'a' && c <= 'z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
+/**
+ * main - entry point
+ *
+ * Return: 0 on success or 1
+ */
+int main(void)
+{
+	int r_value;
+	char small_cap;
+
+	small_cap = 'a';
+
+	r_value = _islower(small_cap);
+	printf("%d\n", r_value);
+	return (0);
+}
+
+_isupper.c/     0           0     0     644     393       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _isupper -  checcks for upper cased characters
+ *
+ * @c: character to be checked
+ * Return: 1 or 0
+ */
+int _isupper(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
+/**
+ * main - entry point
+ *
+ * Return: 1 0r 0
+ */
+int main(void)
+{
+	int x;
+	char y;
+
+	y = 'B';
+	x = _isupper(y);
+	printf("%d\n", x);
+	return (0);
+}
+
+_memcpy.c/      0           0     0     644     443       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _memcpy - copies a block of mem from a src to a dest location
+ *
+ * @dest: ptr to the dest address
+ * @src: ptr to the src address
+ * @n: number of bytes to be copied
+ * Return: ptr to the copied mem address
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+	char x = 'a';
+	char *ptr = &x;
+
+	return (ptr);
+}
+/**
+ * main - entry poi
+ *
+ * Return: 1 or 0;
+ */
+int main(void)
+{
+	return (0);
+}
+
+_memset.c/      0           0     0     644     461       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _memset - fills a block of memory with a specific value
+ *
+ * @s: ptr to the address of mem to be filled
+ * @b: character to fill meory s
+ *
+ * @n: number of bytes to be set to the value
+ * Return: ptr to the memory address filled
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+	char x = 'y';
+	char *ptr = &x;
+
+	return (ptr);
+}
+/**
+ * main - entry point
+ *
+ * Return: 1 or 0
+ */
+int main(void)
+{
+	return (0);
+}
+
+_putchar.c/     0           0     0     644     341       `
+#include <unistd.h>
+/**
+ * _putchar - writes input to stdoutput
+ *
+ * @c: character to be written to stdoutput
+ *
+ * Return: on success 1 or -1 on failure
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+/**
+ * main - entry point
+ *
+ * Return: 0 on success or -1
+ */
+int main(void)
+{
+	char x;
+
+	x = 'A';
+
+	_putchar(x);
+	return (0);
+}
+
+_puts.c/        0           0     0     644     292       `
+#include "main.h"
+#include <stdio.h>
+#include <unistd.h>
+/**
+ * _puts - prints out items in a string
+ *
+ * @s: string whose elements will be printed
+ *
+ * Return: printed string
+ */
+void _puts(char *s)
+{
+	;
+}
+/**
+ * main - entry point
+ *
+ * Return: 1 or 0
+ */
+int main(void)
+{
+	return (0);
+}
+_strcat.c/      0           0     0     644     338       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _strcat - concatanates strings
+ * @dest: destination string
+ * @src: source string
+ *
+ * Return: concatatnated string
+ */
+char *_strcat(char *dest, char *src)
+{
+	char x = 't';
+	char *ptr = &x;
+
+	return (ptr);
+}
+/**
+ * main - entry point
+ *
+ * Return: 1 or o
+ */
+int main(void)
+{
+	return (0);
+}
+strchr.c/       0           0     0     644     408       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _strchr - returns a ptr to the first occurence of a char in a str
+ * @s:ptrr to the str where to search for the char
+ * @c: character to search for
+ *
+ * Return: first occurrence of the str or NULL
+ */
+char *_strchr(char *s, char c)
+{
+	char y = 'a';
+	char *x = &y;
+
+	return (x);
+}
+/**
+ * main - entry point
+ *
+ * Return: 1 or 0
+ */
+int main(void)
+{
+	return (0);
+}
+_strcmp.c/      0           0     0     644     360       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _strcmp - comparess 2 strigs returning an int indicatng the rship btn them
+ * @s1: string 1
+ * @s2: string 2
+ *
+ * Return: an integer indication a rship btn these two
+ */
+int _strcmp(char *s1, char *s2)
+{
+	int x = 2;
+
+	return (x);
+}
+/**
+ * main - entry point
+ *
+ * Return: 1 or 0
+ */
+int main(void)
+{
+	return (0);
+}
+_strcpy.c/      0           0     0     644     354       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _strcpy - copies a src string to a dest string
+ *
+ * @dest: destination string
+ * @src: source string
+ * Return: destination string
+ */
+char *_strcpy(char *dest, char *src)
+{
+	char x = 'x';
+	char *ptr = &x;
+
+
+	return (ptr);
+}
+/**
+ * main - entry point
+ *
+ * Return: 1 or 0;
+ */
+int main(void)
+{
+	return (0);
+}
+_strlen.c/      0           0     0     644     431       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _strlen - returns length of a string
+ *
+ * @s: string whose length will be returned
+ *
+ * Return: length of the string
+ */
+int _strlen(char *s)
+{
+	int count;
+
+	count = 0;
+	while (*s != '\0')
+	{
+		s++;
+		count++;
+	}
+	return (count);
+}
+/**
+ * main - entry point
+ *
+ * Return: 1 or 0
+ */
+int main(void)
+{
+	char abc[3] = "abc";
+	int x;
+
+	x = _strlen(abc);
+	printf("%d\n", x);
+	return (0);
+}
+
+_strncat.c/     0           0     0     644     416       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _strncat - concatenates a spec no of chars frm 1 str to the otha
+ *
+ * @dest: destination str
+ * @src: source str
+ * @n: number of characters to concatenate
+ *
+ * Return: concaenated str
+ */
+char *_strncat(char *dest, char *src, int n)
+{
+	char y = 'A';
+	char *ptr = &y;
+
+	return (ptr);
+}
+/**
+ * main - entry point
+ *
+ * Return: 1 or 0
+ */
+int main(void)
+{
+	return (0);
+}
+
+_strncpy.c/     0           0     0     644     397       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _strncpy - copies a spec no of str from 1 str to the otha
+ *
+ * @dest: dest str
+ * @src: src string
+ *
+ * @n: max number of chars to cpy
+ * Return: copy of  a string
+ *
+ */
+char *_strncpy(char *dest, char *src, int n)
+{
+	char z = 'a';
+	char *ptr = &z;
+
+	return (ptr);
+}
+/**
+ * main - entry point
+ *
+ * Return: 1 or 0
+ */
+int main(void)
+{
+	return (0);
+}
+
+_strpbrk.c/     0           0     0     644     415       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _strpbrk - returns the first occurencefrom a spec set of chars
+ *
+ * @s: ptr to the string to be searched
+ * @accept: to the str conatig chars to search for
+ *
+ * Return: first occurence of char
+ */
+char *_strpbrk(char *s, char *accept)
+{
+	char x = 'x';
+	char *ptr = &x;
+
+	return (0);
+}
+/**
+ * main - entry point
+ *
+ * Return: 1 or 0;
+ */
+int main(void)
+{
+	return (0);
+}
+
+_strspn.c/      0           0     0     644     416       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _strspn - calculates the length of a segment of a str that matches spec char
+ * @s: ptr to the str
+ * @accept: ptr to the str that contains char to match
+ *
+ * Return: length of match characters
+ */
+unsigned int _strspn(char *s, char *accept)
+{
+	int y = 2;
+	int *ptr = &y;
+
+	return (y);
+}
+/**
+ * main - entry point
+ *
+ * Return: 1 or 0
+ */
+int main(void)
+{
+	return (0);
+}
+_strstr.c/      0           0     0     644     451       `
+#include "main.h"
+#include <stdio.h>
+/**
+ * _strstr - returns the first occurence of a sub str within a str
+ * @haystack: ptr to the str tob searched
+ * @needle: ptr to the str reprensentimg a sub string
+ *
+ * Return: returns the first occurence of a sub strig or NULL
+ */
+char *_strstr(char *haystack, char *needle)
+{
+	char x = 'a';
+	char *ptr = &x;
+
+	return (0);
+}
+/**
+ * main - entry point
+ *
+ * Return: 1 or 0;
+ */
+int main(void)
+{
+	return (0);
+}
+
